@@ -2,7 +2,7 @@
 export const config = {
     mode: process.env.REACT_APP_MODE,
     basePath: process.env.REACT_APP_BASE_PATH,
-    publicUrl: process.env.REACT_APP_PUBLIC_URL
+    publicUrl: process.env.PUBLIC_URL
 };
 
 export const publicUrl = (requestUrl = "") => {
