@@ -5,16 +5,17 @@ import Home from './pages/Home';
 import Login from './pages/Login';
 import ResetPassword from './pages/ResetPassword';
 import Register from './pages/Register';
+import { config } from './helpers/url';
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={ config.basePath }>
       <div className="App">
         <Routes>
-          <Route exact path="/" element={<Home />} />
-          <Route exact path="/login" element={<Login />} />
-          <Route exact path="/reset-password" element={<ResetPassword />} />
-          <Route exact path="/register" element={<Register />} />
+          <Route path="/" element={<Home />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/reset-password" element={<ResetPassword />} />
+          <Route path="/register" element={<Register />} />
         </Routes>
       </div>
     </BrowserRouter>

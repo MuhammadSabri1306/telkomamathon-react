@@ -7,6 +7,7 @@ import ArrowLeftIcon from "@heroicons/react/24/solid/ArrowLeftIcon";
 import ArrowRightIcon from "@heroicons/react/24/solid/ArrowRightIcon";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
+import { publicUrl } from "../../helpers/url";
 
 const Form3 = ({ data, onPrev, onNext }) => {
 
@@ -25,7 +26,7 @@ const Form3 = ({ data, onPrev, onNext }) => {
     return (
         <Form noValidate onSubmit={ handleSubmit }>
             <div className="px-5 pt-5 pb-4">
-                <Image src="/img/telkomathon-logo.png" fluid alt="" />
+                <Image src={ publicUrl("/img/telkomathon-logo.png") } fluid alt="" />
             </div>
             <div className="px-3">
                 <h1 className="text-center fw-bold">Registrasi</h1>

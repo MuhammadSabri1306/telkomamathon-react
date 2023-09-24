@@ -9,7 +9,7 @@ import SectionSuccess from "./SectionSuccess";
 
 const FormRegister = () => {
 
-    const [step, setStep] = useState(7);
+    const [step, setStep] = useState(1);
     const [data, setData] = useState({
         name: null,
         nik: null,

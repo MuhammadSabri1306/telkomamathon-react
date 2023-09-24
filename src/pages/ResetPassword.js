@@ -1,10 +1,11 @@
 import Login1Layout from "../layouts/Login1Layout";
 import FormResetPass from "../components/FormResetPass";
+import { publicUrl } from "../helpers/url";
 
 const ResetPassword = () => {
     return (
         <>
-        <Login1Layout imgUrl={ process.env.PUBLIC_URL + "/img/bg-reset-pass.svg" }>
+        <Login1Layout imgUrl={ publicUrl("/img/bg-reset-pass.svg") }>
             <FormResetPass />
         </Login1Layout>
         </>

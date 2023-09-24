@@ -6,6 +6,7 @@ import Col from "react-bootstrap/Col";
 import Button from "react-bootstrap/Button";
 import Image from "react-bootstrap/Image";
 import { Link } from "react-router-dom";
+import { publicUrl } from "../helpers/url";
 
 const FormHeaderDescription = ({ isError }) => {
     if(isError)
@@ -27,7 +28,7 @@ const FormLogin = () => {
     return (
         <Form noValidate validated={ validated } onSubmit={ handleSubmit }>
             <div className="px-5 pt-5 pb-4">
-                <Image src="/img/telkomathon-logo.png" fluid alt="" />
+                <Image src={ publicUrl("/img/telkomathon-logo.png") } fluid alt="" />
             </div>
             <div className="px-3">
                 <h1 className="text-center fw-bold">Login</h1>
@@ -56,7 +57,7 @@ const FormLogin = () => {
             <div className="d-grid gap-2 mb-4">
                 <Button variant="primary" type="submit" size="lg">Sign In</Button>
                 <Button variant="light" className="bg-light shadow-sm btn-icon" aria-labelledby="btnGoogleText">
-                    <img src="/img/social-icon-google-colorful.svg" alt="" />
+                    <img src={ publicUrl("/img/social-icon-google-colorful.svg") } alt="" />
                     <span id="btnGoogleText">Sign in with Google</span>
                 </Button>
             </div>

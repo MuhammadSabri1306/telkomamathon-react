@@ -4,6 +4,7 @@ import Button from "react-bootstrap/Button";
 import Image from "react-bootstrap/Image";
 import ArrowLeftIcon from "@heroicons/react/24/solid/ArrowLeftIcon";
 import { Link } from "react-router-dom";
+import { publicUrl } from "../../helpers/url";
 
 const FormVerify = ({ onContinue }) => {
 
@@ -18,7 +19,7 @@ const FormVerify = ({ onContinue }) => {
     return (
         <Form noValidate validated={ validated } onSubmit={ handleSubmit }>
             <div className="px-5 pt-5 pb-4">
-                <Image src="/img/telkomathon-logo.png" fluid alt="" />
+                <Image src={ publicUrl("/img/telkomathon-logo.png") } fluid alt="" />
             </div>
             <div className="px-3">
                 <h1 className="text-center fw-bold">Forgot Password?</h1>

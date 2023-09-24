@@ -1,11 +1,12 @@
 import Image from "react-bootstrap/Image";
 import { Link } from "react-router-dom";
+import { publicUrl } from "../../helpers/url";
 
 const SectionSuccess = () => {
     return (
         <section>
             <div className="px-5 pt-5 pb-4">
-                <Image src="/img/telkomathon-logo.png" fluid alt="" />
+                <Image src={ publicUrl("/img/telkomathon-logo.png") } fluid alt="" />
             </div>
             <div className="p-3">
                 <h4 className="mt-5 text-center fw-bold">Selamat!</h4>
