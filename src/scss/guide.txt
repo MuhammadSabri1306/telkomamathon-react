@@ -1,7 +1,0 @@
-
-
--- BUILD CSS
-sass src/scss/bootstrap-custom/bootstrap.scss src/scss/build/bootstrap-custom.css
-
--- BUILD MINIFIED CSS
-sass --style=compressed src/scss/bootstrap-custom/bootstrap.scss src/scss/build/bootstrap-custom.min.css
